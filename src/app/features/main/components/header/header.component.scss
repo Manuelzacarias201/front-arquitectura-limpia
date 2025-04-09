@@ -1,0 +1,33 @@
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 20px;
+    background-color: #2d3748;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #e6b800;
+            }
+        }
+    }
+}

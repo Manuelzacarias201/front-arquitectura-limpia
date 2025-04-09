@@ -1,0 +1,64 @@
+.teachers-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.teachers-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.teachers-table th,
+.teachers-table td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.teachers-table th {
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+}
+
+.edit-button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #e6b800;
+}
+
+.delete-button {
+    background-color: #ff4444;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}

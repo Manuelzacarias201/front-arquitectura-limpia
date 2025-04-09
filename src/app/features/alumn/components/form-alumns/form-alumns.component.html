@@ -1,0 +1,27 @@
+<div class="student-form">
+    <h2 class="title">Registrar Nuevo Estudiante</h2>
+
+    <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input id="name" type="text" formControlName="name" placeholder="Ingrese el nombre">
+            @if (studentForm.get('name')?.invalid && studentForm.get('name')?.touched) {
+            <p class="error-message">El nombre es obligatorio y debe tener al menos 3 caracteres.</p>
+            }
+        </div>
+
+        <div class="form-group">
+            <label for="matricula">Matrícula</label>
+            <input id="matricula" type="text" formControlName="matricula"
+                placeholder="Ingrese la matrícula (6 dígitos)">
+            @if (studentForm.get('matricula')?.invalid && studentForm.get('matricula')?.touched) {
+            <p class="error-message">La matrícula es obligatoria.</p>
+            }
+        </div>
+
+        <button class="submit-button" type="submit" [disabled]="studentForm.invalid">Registrar</button>
+    </form>
+    @if (message) {
+    <p> {{ message }}</p>
+    }
+</div>

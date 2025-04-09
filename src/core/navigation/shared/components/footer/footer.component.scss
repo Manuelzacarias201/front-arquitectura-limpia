@@ -1,0 +1,25 @@
+.footer {
+    background-color: #2d3748; // Gris oscuro
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    nav {
+        margin-top: 0.5rem;
+
+        a {
+            color: #ffcc00;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #e6b800;
+            }
+        }
+    }
+}

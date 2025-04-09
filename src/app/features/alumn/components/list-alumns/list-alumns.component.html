@@ -1,0 +1,32 @@
+<div class="students-container">
+    <h2 class="title">Lista de Estudiantes</h2>
+
+    <table class="students-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Matrícula</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (students == null) {
+            <tr>
+                <td colspan="4">No hay estudiantes registrados</td>
+            </tr>
+            }
+            @for (student of students; track student) {
+            <tr>
+                <td>{{ student.id }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.matricula }}</td>
+                <td>
+                    <button class="edit-button" (click)="editStudent(student)">Editar</button>
+                    <button class="delete-button" (click)="deleteStudent(student.id)">Eliminar</button>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

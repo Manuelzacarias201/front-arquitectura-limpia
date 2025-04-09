@@ -1,0 +1,22 @@
+.app-container {
+    background-image: url('https://images.unsplash.com/photo-1579862325998-44e49ab74138?ixid=MnwxNzQxODF8MHwxfGFsbHx8fHx8fHx8fDE2MjMwODUzMDQ&ixlib=rb-1.2.1');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+main-header,
+app-footer {
+    flex-shrink: 0;
+}

@@ -1,0 +1,32 @@
+<div class="teachers-container">
+    <h2 class="title">Lista de Docentes</h2>
+
+    <table class="teachers-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Asignatura</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (teachers == null) {
+            <tr>
+                <td colspan="4">No hay docentes registrados</td>
+            </tr>
+            }
+            @for (teacher of teachers; track teacher) {
+            <tr>
+                <td>{{ teacher.id }}</td>
+                <td>{{ teacher.name }}</td>
+                <td>{{ teacher.asignature }}</td>
+                <td>
+                    <button class="edit-button" (click)="editTeacher(teacher)">Editar</button>
+                    <button class="delete-button" (click)="deleteTeacher(teacher.id)">Eliminar</button>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
